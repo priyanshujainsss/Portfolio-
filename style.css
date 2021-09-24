@@ -1,0 +1,715 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* Navabr styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  font-family: "Ubuntu", "sans-serif";
+  padding: 30px 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+.sticky {
+  background: cadetblue;
+  padding: 15px 0;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: cadetblue;
+}
+.navbar.sticky .logo a span {
+  color: white;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease-in;
+}
+.navbar .menu li a:hover {
+  color: cadetblue;
+}
+.navbar.sticky .menu li a:hover {
+  color: white;
+}
+.menu-btn {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url("images/home.jpg") no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  font-family: "Ubuntu", "sans-serif";
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+  /* color: white; */
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: cadetblue;
+  font-weight: 500;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: cadetblue;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 25px;
+  border: 2px solid cadetblue;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  background: none;
+  color: cadetblue;
+}
+
+
+
+/* about section styling */
+section {
+    padding: 100px 0;
+}
+.about,
+.services, .skills, .teams, .contact, footer {
+  font-family: "Poppins", "sans-serif";
+}
+
+.about .title, .skills .title, .teams .title, .contact .title  {
+  position: relative;
+  text-align: center;
+  font-family: "Ubuntu", "sans-serif";
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  background: black;
+  height: 3px;
+  left: 50%;
+  width: 180px;
+  transform: translateX(-50%);
+}
+.about .title::after {
+  content: "Who I Am";
+  position: absolute;
+  color: cadetblue;
+  padding: 5px;
+  background: white;
+  left: 50%;
+  font-size: 20px;
+  bottom: -13px;
+  transform: translateX(-50%);
+}
+
+.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 5px 10px rgb(85, 81, 81);
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: cadetblue;
+}
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: cadetblue;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid cadetblue;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: cadetblue;
+  background: none;
+}
+
+/* service section style */
+.services, .teams {
+  background: black;
+  color: #fff;
+}
+
+.services .title {
+  position: relative;
+  text-align: center;
+  font-family: "Ubuntu", "sans-serif";
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.services .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  height: 3px;
+  left: 50%;
+  width: 220px;
+  transform: translateX(-50%);
+}
+.services .title::after {
+  content: "What I provide";
+  position: absolute;
+  color: cadetblue;
+  padding: 5px;
+  background: black;
+  left: 50%;
+  font-size: 20px;
+  bottom: -13px;
+  transform: translateX(-50%);
+}
+
+.services .serv-content .card{
+    width:32% ;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: cadetblue;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    margin:10px 0 7px 0;
+}
+.services .serv-content .card .box { 
+    transition: all 0.3s ease-in-out;
+}
+.services .serv-content .card:hover{ 
+   background: cadetblue;
+}
+.services .serv-content .card:hover i{ 
+    color: white;
+ }
+.services .serv-content .card:hover .box { 
+    transform: scale(1.05);
+}
+
+
+/* skills section styling */
+
+.skills .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background: rgb(48, 47, 47);
+    height: 3px;
+    left: 50%;
+    width: 180px;
+    transform: translateX(-50%);
+  }
+  .skills .title::after {
+    content: "What I Know";
+    position: absolute;
+    color: cadetblue;
+    padding: 5px;
+    background: white;
+    left: 50%;
+    font-size: 20px;
+    bottom: -13px;
+    transform: translateX(-50%);
+  }
+  .skills .skills-content .column{
+      width: 48%;
+  }
+  .skills .skills-content .left .text{
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  .skills .skills-content .left p{
+      text-align: justify;
+  }
+  .skills .skills-content .left  a {
+    display: inline-block;
+    background: cadetblue;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 2px solid cadetblue;
+    transition: all 0.3s ease;
+  }
+  
+  .skills .skills-content .left  a:hover {
+    color: cadetblue;
+    background: none;
+  }
+  
+
+  .skills .skills-content .right .bars{
+
+      margin-bottom: 15px;
+  }
+
+  .skills .skills-content .right .bars .info {
+  display: flex;
+  align-items: center;  
+justify-content: space-between;
+margin-bottom: 5px;
+}
+.skills .skills-content .right .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:100%;
+    left:0;
+    top:0;
+    background: cadetblue;
+}
+
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .js::before{
+    width: 80%;
+}.skills .skills-content .right .react::before{
+    width: 70%;
+}
+.skills .skills-content .right .mongodb::before{
+    width: 60%;
+}
+
+/* team section styling */
+.teams .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  background: rgb(255, 254, 254);
+  height: 3px;
+  left: 50%;
+  width: 180;
+  transform: translateX(-50%);
+}
+.teams .title::after {
+  content: "What with me";
+  position: absolute;
+  color: cadetblue;
+  padding: 5px;
+  background: rgb(0, 0, 0);
+  left: 50%;
+  font-size: 20px;
+  bottom: -13px;
+  transform: translateX(-50%);
+}
+
+.teams .carousel .card{
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  transition: all 0.3s ease-in-out;
+}
+.teams .carousel .card:hover{
+  background: cadetblue;
+}
+.teams .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
+}
+.teams .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.teams .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+
+}
+.teams .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid cadetBlue;
+  transition: all 0.3s ease-in-out;
+}
+
+.teams .carousel .card:hover img{
+  border-color: white;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot{
+  height:13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border:2px solid cadetblue!important;
+  transition: all 0.3s ease-in-out;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active, .owl-dot:hover{
+  background: cadetblue!important;
+}
+
+
+/* contact styling start */
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  background: black;
+  height: 3px;
+  left: 50%;
+  width: 210px;
+  transform: translateX(-50%);
+}
+.contact .title::after {
+  content: "Get in touch";
+  position: absolute;
+  color: cadetblue;
+  padding: 5px;
+  background: white;
+  left: 50%;
+  font-size: 20px;
+  bottom: -13px;
+  transform: translateX(-50%);
+}
+.contact .contact-content .column{
+  width: 48%;
+}
+.contact .contact-content .column .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+  margin:10px 0;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row .info .head {
+     font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title {
+  color: #333;
+}
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .name{
+  margin-right: 20px;
+}
+.contact .right form .email{
+  margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border:1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.contact .right form .textarea textarea{
+  padding-top:10px;
+  resize: none;
+  height: 80px;
+
+}
+.contact .right form .button{
+  height: 47px;
+  width: 170px;
+}
+.contact .right form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid cadetblue;
+  background: cadetblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .right form .button button:hover{
+  color: cadetblue;
+  background: none;
+}
+
+/* footer section styling */
+footer{
+  background: black;
+  padding:20px 23px;
+  color:white;
+  text-align: center;
+}
+footer span a {
+  color:cadetblue;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+
+/* responsive media query start */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar .menu.active {
+    transform: translateX(100%);
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card{
+      width: 48%;
+      margin-bottom: 20px;
+  }
+  .skills .skills-content .column{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.contact .contact-content .column{
+  width: 100%;
+  margin-bottom: 25px;
+}
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+    padding: 9px 25px;
+  }
+  .services .serv-content .card{
+    width: 100%;
+    
+}
+
+
+}
+
+
+
+
+
+@media (max-width: 500) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+}
