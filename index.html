@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
     </link>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -17,16 +19,21 @@
 </head>
 
 <body>
+  <div class="scroll-up-btn">
+      <i class="fa fa-angle-up"></i>
+  </div>
+
+
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#teams">Teams</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="menu-btn" >Home</a></li>
+                <li><a href="#about" class="menu-btn" >About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills"class="menu-btn" >Skills</a></li>
+                <li><a href="#projects"  class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn" >Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -40,7 +47,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Priyanshu Jain</div>
-                <div class="text-3">And I'm a<span> Developer</span></div>
+                <div class="text-3">And I'm a <span class="typing"> </span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -56,10 +63,8 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Priyanshu and I'm a <span>Developer</span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, tempore. Laboriosam
-                        assumenda, facere ullam architecto possimus at voluptatibus explicabo, beatae eum eos, ratione
-                        velit ea recusandae aperiam delectus eveniet quod.</p>
-                    <a href="#">Download CV</a>
+                    <p>I enjoy taking complex problems and turning them into simple and beautiful interface. I also love the logic and structure of coding and always strive to write elegant and efficient Code. whether it be HTML, CSS, javascript, jQuery, ajax or express js</p>
+                    <a href="/images/Resume.pdf" download class="download-cv" >Download CV</a>
                 </div>
             </div>
         </div>
@@ -74,24 +79,21 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus, ut repellat
-                            temporibus sit qui.</p>
+                        <p>Beautifully handcrafted design built using the latest technologoies that engage your audience. </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus, ut repellat
-                            temporibus sit qui.</p>
+                        <i class="fas fa-magic"></i>
+                        <div class="text">UI/UX design</div>
+                        <p>Intutive interfaces with focus on the experiences of end users.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
                         <div class="text">App Design</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus, ut repellat
-                            temporibus sit qui.</p>
+                        <p>There's no getting away from it, soon everyone will be viewing the internet from their mobile.</p>
                     </div>
                 </div>
             </div>
@@ -106,10 +108,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My Creative and experiences.</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto deleniti distinctio facere
-                        perspiciatis eaque non quaerat, quia explicabo provident porro reprehenderit fugiat! Odit minima
-                        veniam iure nam sunt voluptatum deserunt?</p>
-                    <a href="#"> Read more..</a>
+                    <p>When I start coding. I see some difficulties. But doing again and again we love coding / programming. Creativity and Development both are in me. I have not much experience but in my experience i learn alot. </p>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -165,30 +164,30 @@
         </div>
     </section>
 
-    <!-- team section start -->
-    <section class="teams" id="teams" >
+    <!-- project section start -->
+    <section class="projects" id="projects" >
         <div class="max-width">
-            <div class="title">My team</div>
+            <div class="title">My Projects</div>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile1.jpg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/ecomm.png" alt="">
+                        <div class="text">Ecommerce Website</div>
+                        <p>In our Ecommerce website customer can visit and purchase the products. And can see their past orders. Click <a href="https://eproducts.netlify.app">Here</a>  to view our creation.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/user.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/admin.jpg" alt="">
+                        <div class="text">Admin Panel</div>
+                        <p>All Rounded Admin Panel that can be set easily with other application. Many API'S are used in this admin panel. </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/user2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <img src="images/chat.png" alt="">
+                        <div class="text">Chat Application</div>
+                        <p>User can chat with their friend and other person's easily. Currently appication supports group chat not individual chat.  </p>
                     </div>
                 </div>
             </div>
@@ -201,8 +200,9 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora recusandae cum rerum
-                        voluptate, reprehenderit maiores, delectus corporis officia id natus quam c</p>
+                    <!-- <p>Should you require further assistance please use the message me box at the <span class="contact-ref" >  </span> side.
+                        </p> -->
+                        <p>Should ypu require further assistance please mail us.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -222,31 +222,32 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">20jainpriyanshu@gmail.com</div>
+                                <div class="sub-title"><a href="mailto:20jainpriyanshu@gmail.com" >20jainpriyanshu@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="column right">
+                <div class="column right" style="display: none;" >
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" >
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" >
                             </div>
                         </div>
                             <div class="field ">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" placeholder="Subject" >
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe.." required></textarea>
+                                <textarea cols="30" rows="10" placeholder="Describe.." ></textarea>
                             </div>
                             <div class="button">
-                                <button type="submit">Send message</button>
+                                <button type="submit" class="send-mail">Send message</button>
+                                <a href="mailto:20jainpriyanshu@gmail.com?subject=">Sendeth This Mail</a>
                             </div>
 
                     </form>
@@ -261,7 +262,7 @@
    <!-- Footer Section -->
  
   <footer>
-      <span>Created By <a href="#">Priyanshu Jain</a> <i class="far fa-copyright"></i>2021 All right reserved..</span>
+      <span>Created By <a href="#">Priyanshu Jain</a> <i class="far fa-copyright"></i>2021 All right reserved.</span>
     </footer>
 
 
